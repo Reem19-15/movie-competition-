@@ -19,11 +19,11 @@ export const tvType = {
 
 const tmdbApi = {
   getMoviesList: (type, params = {}) => {
-    const url = `movie/${movieType[type]}`;
+    const url = `movie/${type}`; // Fixed URL structure
     return AxiosClient.get(url, { params });
   },
   getTvList: (type, params = {}) => {
-    const url = `tv/${tvType[type]}`;
+    const url = `tv/${type}`; // Fixed URL structure
     return AxiosClient.get(url, { params });
   },
   getVideos: (cate, id) => {
@@ -42,9 +42,14 @@ const tmdbApi = {
     const url = `${category[cate]}/${id}/credits`;
     return AxiosClient.get(url);
   },
-  similar: (cate, id) => {
+  similar: (cate, id, params = {}) => {
     const url = `${category[cate]}/${id}/similar`;
-    return AxiosClient.get(url);
+    return AxiosClient.get(url, { params });
+  },
+
+  getGenres: (cate) => {
+    const url = `genre/${category[cate]}/list`;
+    return AxiosClient.get(url).then((response) => response.data); // Ensures correct data access
   },
 };
 
