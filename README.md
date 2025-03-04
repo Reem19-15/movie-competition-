@@ -1,12 +1,85 @@
-# React + Vite
+Movie Competition Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Movie Competition Platform! This is a React-based movie review and rating platform where users can browse, review, and rate movies. The project aims to provide an IMDb-like experience with a sleek, modern design and powerful filtering options.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎬 Browse Movies and TV Shows
 
-## Expanding the ESLint configuration
+🔍 Search for Movies by Title
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📊 Filter & Sort by Genre, Rating, Release Date, and Popularity
+
+📝 User Authentication (Sign up & Login)
+
+⭐ Rate & Review Movies
+
+📽️ Watch Trailers
+
+🎨 Responsive & Dark-Themed UI
+
+🛠️ Tech Stack
+
+Frontend: React, Bootstrap
+
+Backend: SQL Server (for storing reviews and ratings)
+
+API: TMDB API (for fetching movie details)
+
+📂 Folder Structure
+
+📦 movie-competition
+├── 📁 src
+│ ├── 📁 assets # Icons, images, fonts
+│ ├── 📁 components # Reusable UI components
+│ ├── 📁 pages # Pages like Home, Movie Details, Login
+│ ├── 📁 api # API calls using Axios
+│ ├── 📄 App.js # Main React Component
+│ ├── 📄 index.js # Entry point
+├── 📄 package.json # Dependencies & scripts
+├── 📄 README.md # Project documentation
+
+⚡ Getting Started
+
+1️⃣ Clone the Repository
+
+git clone https://github.com/Reem19-15/movie-competition-.git
+cd movie-competition
+
+2️⃣ Install Dependencies
+
+npm install
+
+3️⃣ Setup API Key
+
+Create a .env file in the root directory.
+
+Add your TMDB API key:
+
+REACT_APP_TMDB_API_KEY=your_api_key_here
+
+4️⃣ Run the App
+
+npm start
+
+The app will start at http://localhost:3000/
+
+🎯 Future Enhancements
+
+🎭 User Profiles & Favorites
+
+🗂️ Improved Filtering System
+
+📅 Upcoming Movie Reminders
+
+📜 License
+
+This project is open-source under the MIT License.
+
+💡 Contributing
+
+We welcome contributions! Feel free to fork, submit issues, or create pull requests.
+
+⭐ Show Your Support
+
+If you like this project, give it a star ⭐ on GitHub!
